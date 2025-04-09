@@ -1,0 +1,22 @@
+.but-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  .but {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: min-content;
+    justify-content: center;
+  }
+
+  .but:hover {
+    background-color: #0056b3;
+  }
+  

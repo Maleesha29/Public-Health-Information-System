@@ -1,0 +1,33 @@
+.adminClinic {
+    padding: 20px;
+}
+
+.adminClinic .MuiTable-root {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.adminClinic .MuiTableHead-root {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+}
+
+.adminClinic .MuiTableCell-head {
+    font-weight: bold;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+}
+
+.adminClinic .MuiTableCell-root {
+    text-align: left;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.adminClinic .MuiTableRow-root:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.adminClinic .MuiTableRow-root:hover {
+    background-color: #e0e0e0;
+}

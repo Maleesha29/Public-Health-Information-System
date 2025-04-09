@@ -1,0 +1,52 @@
+.VaccineRegTab {
+    width: 60%;
+    background-color: rgb(225, 217, 241);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.VaccineRegTab table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.VaccineRegTab th,
+.VaccineRegTab td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.VaccineRegTab table thead th {
+    background-color: darkblue;
+    color: white;
+}
+
+.VaccineRegTab table tbody td {
+    text-align: center;
+}
+
+.actionButtons button,
+.deleteButtons button,
+.generate {
+    border: 0;
+    outline: none;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actionButtons button {
+    background-color: green;
+}
+
+.deleteButtons button {
+    background-color: red;
+}
+
+.generate {
+    background-color: rgb(29, 84, 129);
+}

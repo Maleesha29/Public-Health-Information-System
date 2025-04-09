@@ -1,0 +1,24 @@
+.ptrep{
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color:#ECECEC;
+    border-radius: 30px;
+    padding: 35px 35px 35px 35px;
+    border: 1px solid black;
+}
+
+.formptnt{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formptnt p{
+    font-weight: 600
+}
+
+.btnpatient{
+    align-items: center;
+}

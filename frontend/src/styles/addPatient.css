@@ -1,0 +1,30 @@
+.addform {
+    height: 80%;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #ECECEC;
+    border-radius: 30px;
+    padding: 25px 25px 25px 25px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.padd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.padd p {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnaddp {}

@@ -1,0 +1,114 @@
+/* FCDMTable.css */
+
+/* Main container styles */
+.document-management {
+  padding: 20px 0;
+}
+
+/* Paper styles */
+.MuiPaper-root {
+  transition: all 0.3s ease-in-out;
+}
+
+.MuiPaper-root:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+.MuiTable-root {
+  min-width: 650px;
+}
+
+.MuiTableRow-root:hover {
+  background-color: rgba(52, 152, 219, 0.08) !important;
+}
+
+.MuiTableCell-head {
+  font-weight: bold !important;
+}
+
+/* Chip styles */
+.MuiChip-root {
+  font-weight: 500;
+}
+
+/* Button styles */
+.MuiButton-containedPrimary {
+  background-color: #3498db;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #2980b9;
+  box-shadow: 0 4px 8px rgba(41, 128, 185, 0.3);
+}
+
+/* IconButton hover effects */
+.MuiIconButton-root {
+  transition: all 0.2s ease;
+}
+
+.MuiIconButton-colorPrimary:hover {
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.MuiIconButton-colorError:hover {
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+/* Typography styles */
+h1.MuiTypography-root {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+h1.MuiTypography-root::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #3498db;
+  border-radius: 2px;
+}
+
+/* Search field styles */
+.MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #3498db;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .MuiContainer-root {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  h1.MuiTypography-root {
+    font-size: 1.75rem;
+  }
+}
+
+/* Loading spinner styles */
+.MuiCircularProgress-root {
+  color: #3498db;
+}
+
+/* Tooltip styles */
+.MuiTooltip-tooltip {
+  background-color: #2c3e50;
+  font-size: 12px;
+}
+
+/* No data message styles */
+.no-data-message {
+  padding: 40px 0;
+  text-align: center;
+  color: #7f8c8d;
+}

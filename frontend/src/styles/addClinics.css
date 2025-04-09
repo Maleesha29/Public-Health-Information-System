@@ -1,0 +1,70 @@
+.clcontainer {
+
+    height: auto;
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 3%;
+    background-color: rgb(83, 83, 206);
+    width: 40%;
+    background-color: #ECECEC;
+    border-radius: 30px;
+    padding: 25px 25px 25px 25px;
+    border: 1px solid black;
+
+}
+
+.cl1 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: 85%;
+    margin-top: 3%;
+    align-items: center;
+}
+
+.rdgrp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.rdbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rdbtn label {
+    padding-left: 5px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.slcbtn {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slcbtn p {
+    padding-right: 10px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.btn {
+
+    margin-top: 1%;
+}
+
+/*img slideshow*/
+
+
+.contflex {
+    display: flex;
+    background-color: rgb(83, 83, 206);
+    height: auto;
+    width: 100%;
+}

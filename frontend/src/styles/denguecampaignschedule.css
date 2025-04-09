@@ -1,0 +1,51 @@
+.title2{
+    text-align: center;
+    width: 34%;
+    background-color: rgb(229, 235, 246);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.campaigndetails{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.campaigndetails .input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+.venue{
+    padding-right: 40px;
+}
+.stime{
+    padding-right: 40px;
+}
+.drname{
+    padding-right: 40px;
+}
+.campaigndetails .input button{
+    border: 0;
+    outline: none;
+    background-color: #0056b3;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    width: 100px;
+}
+
+.title2 .h23{
+    margin-top: 10px;
+}

@@ -1,0 +1,66 @@
+.VaccineReqTab{
+    width :60%;
+    background-color:rgb(225,217,241);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.VaccineReqTab table{
+    width :100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+
+}
+.VaccineReqTab th {
+    border: 1px solid #000; /* Add border around table headers */
+    padding: 10px; /* Add padding to table headers */
+  }
+
+  .VaccineReqTab td {
+    border: 1px solid #000; /* Add border around table cells */
+    padding: 10px; /* Add padding to table cells */
+  }
+.VaccineReqTab table thead th{
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+
+}
+
+.VaccineReqTab table tbody td{
+    padding: 10px;
+    text-align: center;
+}
+
+.actionButtons button{
+    border: 0;
+    outline: none;
+    background-color: green;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deleteButtons button{
+    border: 0;
+    outline: none;
+    background-color: red;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generate{
+    border: 0;
+    outline: none;
+    background-color: rgb(29, 84, 129);
+    padding: 8px 10px ;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}

@@ -1,0 +1,169 @@
+/* General Navbar Styling */
+.navbar {
+  background: linear-gradient(to right, #20b2aa , #42a5f5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 0.1rem;   /* Reduce top padding */
+  padding-bottom: 0.1rem; /* Reduce bottom padding */
+  max-height: 100px;      /* Reduce min-height */
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.navbar-brand.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.dropdown-item.active{
+  color: #ffd700;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+/* Dropdown */
+#navbarDropdown {
+  color: white;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  background: #42a5f5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #e3f2fd;
+}
+
+/* Login Button */
+.loginbtn {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  font-weight: 600;
+  padding: 6px 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.loginbtn:hover {
+  background-color: #e0a800;
+}
+
+/* Dialog Container */
+.dialog-container .MuiDialog-paper {
+  padding: 2rem;
+  border-radius: 15px;
+  background: #f5faff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  min-width: 350px;
+}
+
+/* Dialog Content */
+.dialog-content h2 {
+  font-size: 1.8rem;
+  color: #1976d2;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 10px;
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  border-color: #0d47a1;
+}
+
+.placeholder-label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: #f5faff;
+  padding: 0 5px;
+  color: #1976d2;
+  font-size: 0.9rem;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Buttons */
+.btnlg, .btnlg2 {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btnlg {
+  background-color: #1976d2;
+  color: white;
+}
+
+.btnlg:hover {
+  background-color: #0d47a1;
+}
+
+.btnlg2 {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btnlg2:hover {
+  background-color: #bdbdbd;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #1976d2;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .nav-link, #navbarDropdown {
+    color: white !important;
+  }
+}

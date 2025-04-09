@@ -1,0 +1,63 @@
+.leave {
+  position: relative;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  margin: 60px auto 20px;
+  background-color: rgba(255, 255, 255, 0.7); 
+
+}
+
+.leave h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.leave label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.leave input[type="text"],
+.leave input[type="email"],
+.leave input[type="date"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.leave input[type="radio"] {
+  margin-right: 5px;
+}
+
+.leave input[type="radio"] + label {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.leave button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.leave button:hover {
+  background-color: #0056b3;
+}
+
+.layout-container5{
+  background-image: url('../webImages/stback3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin-top: -60x;
+    margin-bottom: -45px;
+}

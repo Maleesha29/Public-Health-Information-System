@@ -1,0 +1,446 @@
+/* Midwife Management System Styles */
+:root {
+  --mw-primary: #5d8aa8;
+  --mw-primary-dark: #3a6884;
+  --mw-primary-light: #8fb3c9;
+  --mw-secondary: #f4978e;
+  --mw-secondary-dark: #f08080;
+  --mw-accent: #fbc4ab;
+  --mw-dark: #2f4858;
+  --mw-text: #33383e;
+  --mw-light-text: #6e7883;
+  --mw-light-bg: #f8f9fd;
+  --mw-white: #ffffff;
+  --mw-baby-blue: #a8d1e7;
+  --mw-baby-pink: #f8d7da;
+  --mw-baby-green: #d4edda;
+  --mw-gradient: linear-gradient(135deg, var(--mw-primary), var(--mw-primary-dark));
+  --mw-shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.08);
+  --mw-shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --mw-shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+  --mw-radius-sm: 6px;
+  --mw-radius-md: 10px;
+  --mw-radius-lg: 16px;
+  --mw-radius-xl: 22px;
+  --mw-transition: all 0.3s ease;
+  --mw-font: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Base styles */
+.mw-dashboard {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+  font-family: var(--mw-font);
+  color: var(--mw-text);
+}
+
+/* Hero Section */
+.mw-hero-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  padding: 40px 0;
+}
+
+.mw-hero-content {
+  flex: 1;
+}
+
+.mw-hero-title {
+  font-size: 40px;
+  color: var(--mw-primary-dark);
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.mw-hero-tagline {
+  display: inline-block;
+  background-color: var(--mw-accent);
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--mw-dark);
+  margin-bottom: 20px;
+}
+
+.mw-hero-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--mw-light-text);
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.mw-hero-image {
+  flex: 1;
+  max-width: 45%;
+  position: relative;
+}
+
+.mw-hero-image::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--mw-accent);
+  border-radius: var(--mw-radius-lg);
+  z-index: -1;
+}
+
+.mw-hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--mw-radius-lg);
+  box-shadow: var(--mw-shadow-md);
+  display: block;
+}
+
+/* Services Section */
+.mw-services-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mw-services-heading h2 {
+  font-size: 32px;
+  color: var(--mw-primary-dark);
+  margin-bottom: 12px;
+  position: relative;
+  display: inline-block;
+}
+
+.mw-services-heading h2::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: var(--mw-gradient);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.mw-services-heading p {
+  font-size: 18px;
+  color: var(--mw-light-text);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mw-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.mw-service-card {
+  background-color: var(--mw-white);
+  border-radius: var(--mw-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--mw-shadow-md);
+  transition: var(--mw-transition);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mw-service-card:nth-child(1) {
+  border-top: 5px solid var(--mw-baby-pink);
+}
+
+.mw-service-card:nth-child(2) {
+  border-top: 5px solid var(--mw-baby-green);
+}
+
+.mw-service-card:nth-child(3) {
+  border-top: 5px solid var(--mw-baby-blue);
+}
+
+.mw-service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--mw-shadow-lg);
+}
+
+.mw-service-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 32px;
+  z-index: 2;
+  background-color: var(--mw-white);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: var(--mw-shadow-sm);
+}
+
+.mw-service-image-container {
+  padding: 30px;
+  background-color: var(--mw-light-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.mw-service-image {
+  max-width: 60%;
+  max-height: 140px;
+  object-fit: contain;
+  transition: var(--mw-transition);
+}
+
+.mw-service-card:hover .mw-service-image {
+  transform: scale(1.1);
+}
+
+.mw-service-content {
+  padding: 25px 25px 20px;
+  flex-grow: 1;
+}
+
+.mw-service-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--mw-primary-dark);
+}
+
+.mw-service-description {
+  color: var(--mw-light-text);
+  line-height: 1.5;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.mw-service-btn {
+  display: block;
+  margin: 0 25px 25px;
+  padding: 12px 20px;
+  background: var(--mw-gradient);
+  color: var(--mw-white);
+  text-decoration: none;
+  border-radius: var(--mw-radius-md);
+  font-weight: 600;
+  text-align: center;
+  transition: var(--mw-transition);
+  box-shadow: var(--mw-shadow-sm);
+}
+
+.mw-service-btn:hover {
+  background-image: linear-gradient(135deg, var(--mw-primary-dark), var(--mw-primary));
+  box-shadow: var(--mw-shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Benefits Section */
+.mw-benefits-section {
+  background-color: var(--mw-light-bg);
+  border-radius: var(--mw-radius-lg);
+  padding: 50px 40px;
+  margin: 60px 0;
+}
+
+.mw-benefits-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mw-benefits-heading h2 {
+  font-size: 32px;
+  color: var(--mw-primary-dark);
+  margin-bottom: 12px;
+}
+
+.mw-benefits-heading p {
+  font-size: 17px;
+  color: var(--mw-light-text);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mw-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.mw-benefit-card {
+  background-color: var(--mw-white);
+  padding: 30px;
+  border-radius: var(--mw-radius-md);
+  box-shadow: var(--mw-shadow-sm);
+  transition: var(--mw-transition);
+  text-align: center;
+}
+
+.mw-benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--mw-shadow-md);
+}
+
+.mw-benefit-icon {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.mw-benefit-card h3 {
+  font-size: 20px;
+  color: var(--mw-primary-dark);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.mw-benefit-card p {
+  color: var(--mw-light-text);
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* Quote Section */
+.mw-quote-section {
+  background-color: var(--mw-white);
+  border-radius: var(--mw-radius-lg);
+  padding: 40px;
+  margin: 60px 0;
+  text-align: center;
+  box-shadow: var(--mw-shadow-md);
+  position: relative;
+}
+
+.mw-quote-section::before {
+  content: '"';
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;
+  color: var(--mw-accent);
+  font-family: Georgia, serif;
+  opacity: 0.4;
+  line-height: 1;
+}
+
+.mw-quote-section blockquote {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--mw-primary-dark);
+  max-width: 900px;
+  margin: 0 auto 20px;
+  font-style: italic;
+}
+
+.mw-quote-author {
+  font-weight: 600;
+  color: var(--mw-secondary-dark);
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .mw-hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .mw-hero-content {
+    order: 2;
+  }
+
+  .mw-hero-image {
+    order: 1;
+    max-width: 80%;
+    margin: 0 auto 30px;
+  }
+
+  .mw-hero-description {
+    margin: 0 auto 30px;
+  }
+
+  .mw-hero-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .mw-hero-title {
+    font-size: 32px;
+  }
+
+  .mw-services-grid,
+  .mw-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mw-benefits-section,
+  .mw-quote-section,
+  .mw-cta-section {
+    padding: 30px 20px;
+  }
+
+  .mw-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mw-primary-btn, .mw-secondary-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mw-hero-image {
+    max-width: 100%;
+  }
+
+  .mw-hero-tagline {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .mw-hero-description,
+  .mw-services-heading p,
+  .mw-benefits-heading p {
+    font-size: 16px;
+  }
+
+  .mw-services-heading h2,
+  .mw-benefits-heading h2,
+  .mw-cta-section h2 {
+    font-size: 28px;
+  }
+
+  .mw-quote-section blockquote {
+    font-size: 18px;
+  }
+}
+
+/* Animation Utility Class */
+.mw-animate-pulse {
+  animation: mw-pulse 2s infinite;
+}
+
+@keyframes mw-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

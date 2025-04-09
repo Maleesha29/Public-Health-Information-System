@@ -1,0 +1,286 @@
+/* FCRS.css - Violation Reports Styling */
+
+.fcrs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.fcrs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.fcrs-title {
+  font-size: 28px;
+  color: #1a237e;
+  margin: 0;
+  font-weight: 600;
+}
+
+.fcrs-search-container {
+  position: relative;
+  width: 350px;
+}
+
+.fcrs-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+.fcrs-search-input {
+  width: 100%;
+  padding: 10px 16px 10px 40px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 16px;
+  background-color: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+.fcrs-search-input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+  background-color: #fff;
+}
+
+.fcrs-table-container {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.fcrs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.fcrs-table th {
+  background-color: #f1f5f9;
+  color: #334155;
+  font-weight: 600;
+  text-align: left;
+  padding: 16px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.fcrs-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e9eef6;
+  color: #334155;
+}
+
+.fcrs-table-row {
+  transition: background-color 0.2s ease;
+}
+
+.fcrs-table-row:hover {
+  background-color: #f8fafc;
+}
+
+.fcrs-violation-type {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.fcrs-status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.fcrs-status-pending {
+  background-color: #fef9c3;
+  color: #a16207;
+}
+
+.fcrs-status-approved {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.fcrs-status-rejected {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.fcrs-status-other {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+.fcrs-view-btn {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.fcrs-view-btn:hover {
+  background-color: #4338ca;
+}
+
+.fcrs-expanded-row {
+  background-color: #f8fafc;
+}
+
+.fcrs-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+  gap: 24px;
+}
+
+.fcrs-details-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.fcrs-wide-column {
+  flex: 2;
+  min-width: 300px;
+}
+
+.fcrs-details-column h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #1e293b;
+  font-size: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.fcrs-details-column p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+.fcrs-evidence-section {
+  margin-top: 16px;
+}
+
+.fcrs-evidence-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.fcrs-evidence-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.fcrs-evidence-thumbnail {
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  object-fit: cover;
+}
+
+.fcrs-evidence-name {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.fcrs-no-evidence {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.fcrs-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  color: #64748b;
+}
+
+.fcrs-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(79, 70, 229, 0.2);
+  border-left-color: #4f46e5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fcrs-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.fcrs-empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.fcrs-empty-state h2 {
+  margin: 0 0 8px 0;
+  color: #1e293b;
+}
+
+.fcrs-empty-state p {
+  color: #64748b;
+  text-align: center;
+  max-width: 400px;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .fcrs-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fcrs-search-container {
+    width: 100%;
+  }
+
+  .fcrs-table th:nth-child(3),
+  .fcrs-table td:nth-child(3),
+  .fcrs-table th:nth-child(4),
+  .fcrs-table td:nth-child(4) {
+    display: none;
+  }
+}

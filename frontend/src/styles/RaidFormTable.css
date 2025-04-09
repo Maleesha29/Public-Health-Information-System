@@ -1,0 +1,42 @@
+.FormtableTab {
+    margin: 20px;
+}
+
+.FormtableTab table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.FormtableTab th,
+.FormtableTab td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.FormtableTab th {
+    background-color: #f2f2f2;
+}
+
+.FormtableTab tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.FormtableTab tr:hover {
+    background-color: #ddd;
+}
+
+.FormtableTab .actionButtons,
+.FormtableTab .deleteButtons {
+    text-align: center;
+}
+.search {
+    width: 100%;
+    text-align: right;
+  }
+  
+  .search input {
+    width: 300px;
+    display: inline-block;
+    margin-right: 20px;
+  }

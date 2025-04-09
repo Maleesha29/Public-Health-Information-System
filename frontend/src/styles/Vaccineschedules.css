@@ -1,0 +1,66 @@
+
+
+.layout-container2 {
+    background-image: url('../webImages/staff.jpg'); /* Replace '../path/to/d2.png' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+  }
+  
+  .assign-staff-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for better readability */
+  }
+  
+  .assign-staff-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .assign-staff-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .assign-staff-container form div {
+    margin-bottom: 15px;
+  }
+  
+  .assign-staff-container form label {
+    margin-bottom: 5px;
+  }
+  
+  .assign-staff-container form input,
+  .assign-staff-container form select,
+  .assign-staff-container form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .assign-staff-container form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .assign-staff-container form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .assign-staff-container .view-programs {
+    margin-top: 10px;
+    background-color: #28a745;
+    margin-left: 150px;
+  }
+  
+  .assign-staff-container .view-programs:hover {
+    background-color: #218838;
+  }
+  

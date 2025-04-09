@@ -1,0 +1,43 @@
+.LeaveTable {
+  margin: 20px;
+}
+
+.LeaveTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.LeaveTable th,
+.LeaveTable td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.LeaveTable th {
+  background-color: #f2f2f2;
+}
+
+.LeaveTable .actionButtons button {
+  padding: 6px 10px;
+  margin: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.LeaveTable .editButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.LeaveTable .deleteButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.LeaveTable .pdfButton {
+  background-color: #2196f3;
+  color: white;
+}
+
+

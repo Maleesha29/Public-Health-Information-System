@@ -1,0 +1,76 @@
+.bdtitle{   
+  width: 45%;
+  background-color:rgb(225,217,241);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  border-radius: 5px;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+.he3{
+  text-align: center;
+  font-family: Arial, sans-serif;
+
+}
+
+.addRF{
+  margin-top: 20px;
+}
+
+
+.addRF .input{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addRF .input label{
+  margin-bottom: 5px;
+
+
+}
+
+
+.addRF .input label input{
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+}
+
+.addRF h3{
+  margin-top: 10px;
+
+}
+
+.bdsubmit{
+  border: 0;
+  outline: none;
+  background-color: rgb(238, 65, 83);
+  color: white;
+  font-weight: 600;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  margin-top: 30px;
+  width: 100px;
+  height: 30;
+  margin-left: 150px;
+  margin-right: 50px;
+}
+
+.bdsave{
+  border: 0;
+  outline: none;
+  background-color: rgb(110, 64, 226);
+  color: white;
+  font-weight: 600;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  margin-top: 30px;
+  width: 100px;
+  height: 30;
+}

@@ -1,0 +1,434 @@
+/* Global styles */
+:root {
+  --primary-color: #ff5c35;
+  --secondary-color: #2c3e50;
+  --accent-color: #3498db;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --danger-color: #e74c3c;
+  --success-color: #2ecc71;
+  --warning-color: #f39c12;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease-in-out;
+}
+
+/* Hero Section */
+.dengue-hero {
+  display: flex;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  box-shadow: var(--box-shadow);
+}
+
+.dengue-hero__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dengue-hero__title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.dengue-hero__subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.dengue-hero__text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--dark-color);
+  margin-bottom: 2rem;
+}
+
+.dengue-hero__cta {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: var(--transition);
+  align-self: flex-start;
+  box-shadow: 0 4px 8px rgba(255, 92, 53, 0.3);
+}
+
+.dengue-hero__cta:hover {
+  background-color: #e64a19;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(255, 92, 53, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.dengue-hero__image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dengue-hero__image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.dengue-hero__image:hover {
+  transform: scale(1.02);
+}
+
+/* Events Section */
+.dengue-events {
+  padding: 2rem 0 4rem;
+}
+
+.dengue-events__heading {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.dengue-events__heading:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.dengue-events__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.dengue-event-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.dengue-event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dengue-event-card__image-wrapper {
+  height: 180px;
+  overflow: hidden;
+}
+
+.dengue-event-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.dengue-event-card:hover .dengue-event-card__image {
+  transform: scale(1.1);
+}
+
+.dengue-event-card__content {
+  padding: 1.5rem;
+}
+
+.dengue-event-card__title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.dengue-event-card__text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 1.5rem;
+  min-height: 85px;
+}
+
+.dengue-event-card__button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 2px 5px rgba(52, 152, 219, 0.3);
+}
+
+.dengue-event-card__button:hover {
+  background-color: #2980b9;
+  color: white;
+  text-decoration: none;
+}
+
+.dengue-events__navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.dengue-events__nav-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--light-color);
+  border: 1px solid #ddd;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.dengue-events__nav-button:hover {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+.dengue-events__nav-icon {
+  font-size: 1.2rem;
+}
+
+/* Call to Action Section */
+.dengue-cta-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0 4rem;
+}
+
+.dengue-cta-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  height: 300px;
+}
+
+.dengue-cta-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.dengue-cta-card__image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dengue-cta-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dengue-cta-card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+}
+
+.dengue-cta-card__content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  color: white;
+}
+
+.dengue-cta-card__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.dengue-cta-card__text {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.dengue-cta-card__button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: var(--transition);
+  align-self: flex-start;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dengue-cta-card__button:hover {
+  background-color: #e64a19;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  text-decoration: none;
+}
+
+/* Statistics Section */
+.dengue-stats {
+  background-color: #f5f7fa;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.dengue-stats__heading {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.dengue-stats__heading:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.dengue-stats__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dengue-stat-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.dengue-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dengue-stat-card__number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.dengue-stat-card__text {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .dengue-hero {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+  }
+  
+  .dengue-hero__image-container {
+    margin-top: 2rem;
+  }
+  
+  .dengue-hero__title {
+    font-size: 2.3rem;
+  }
+  
+  .dengue-events__container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .dengue-hero__title {
+    font-size: 2rem;
+  }
+  
+  .dengue-hero__subtitle {
+    font-size: 1.3rem;
+  }
+  
+  .dengue-event-card__text {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .dengue-hero {
+    padding: 2rem 1rem;
+  }
+  
+  .dengue-hero__title {
+    font-size: 1.8rem;
+  }
+  
+  .dengue-hero__subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .dengue-events__heading, 
+  .dengue-stats__heading {
+    font-size: 1.8rem;
+  }
+  
+  .dengue-cta-card__title {
+    font-size: 1.5rem;
+  }
+}

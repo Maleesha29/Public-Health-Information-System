@@ -1,0 +1,44 @@
+/* RaidSubTable.css */
+
+.RaidSubmissionTable {
+    margin: 20px;
+}
+
+.RaidSubmissionTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.RaidSubmissionTable th,
+.RaidSubmissionTable td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.RaidSubmissionTable th {
+    background-color: #f2f2f2;
+}
+
+.RaidSubmissionTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.RaidSubmissionTable tr:hover {
+    background-color: #ddd;
+}
+
+.RaidSubmissionTable .actionButtons,
+.RaidSubmissionTable .deleteButtons {
+    text-align: center;
+}
+.search {
+    width: 100%;
+    text-align: right;
+  }
+  
+  .search input {
+    width: 300px;
+    display: inline-block;
+    margin-right: 20px;
+  }

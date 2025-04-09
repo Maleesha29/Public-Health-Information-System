@@ -1,0 +1,77 @@
+.title1{
+   
+    width: 38%;
+    background-color:rgb(206, 213, 224);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.head2{
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+}
+
+.addvaccineapp{
+    margin-top: 50px;   
+}
+
+
+.addvaccineapp .input{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addvaccineapp .input label{
+    margin-bottom: 10px;
+    margin-right: 325px;
+    margin-top: 10px;
+}
+
+
+.addvaccineapp .input label input{
+    margin-bottom: 10px;
+    padding: 15px;
+    outline: none;
+}
+
+.addvaccineapp he3{
+    margin-top: 20px;
+
+}
+
+.bappview{
+    border: 0;
+    outline: none;
+    background-color: rgb(57, 70, 109);
+    color: white;
+    font-weight: 400;
+    padding: 5px 1px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    margin-top: 30px;
+    width: 100px;
+    height: 30;
+    margin-left: 160px;
+    margin-right: 55px;
+}
+
+.bappsave{
+    border: 0;
+    outline: none;
+    background-color: rgb(215, 21, 21);
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    margin-top: 30px;
+    width: 100px;
+    height: 30;
+}

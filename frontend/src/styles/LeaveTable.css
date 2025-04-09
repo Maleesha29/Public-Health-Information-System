@@ -1,0 +1,64 @@
+.LeaveTable {
+    padding: 20px;
+}
+
+.LeaveTable .MuiTable-root {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.LeaveTable .MuiTableHead-root {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+}
+
+.LeaveTable .MuiTableCell-head {
+    font-weight: bold;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+}
+
+.LeaveTable .MuiTableCell-root {
+    text-align: left;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.LeaveTable .MuiTableRow-root:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.LeaveTable .MuiTableRow-root:hover {
+    background-color: #e0e0e0;
+}
+
+.LeaveTable .actionButtons button {
+    border: 0;
+    outline: none;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.LeaveTable .actionButtons .editButton {
+    background-color: rgb(25, 173, 173);
+}
+
+.LeaveTable .actionButtons .deleteButton,
+.LeaveTable .deleteButtons button {
+    background-color: red;
+}
+
+.LeaveTable .generate {
+    background-color: rgb(29, 84, 129);
+}
+
+.LeaveTable .searchButton {
+    background-color: rgb(199, 199, 230);
+}
+
+.LeaveTable .generateButton {
+    background-color: blue;
+}
